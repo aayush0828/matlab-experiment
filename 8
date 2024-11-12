@@ -1,0 +1,12 @@
+% Sample data
+base = 10;
+height = 5;
+
+% Call the function
+calculatedArea = calculateArea(base, height);
+disp(['Calculated Area (corrected): ', num2str(calculatedArea)]);
+
+% Local function to calculate area of a triangle
+function area = calculateArea(base, height)
+    area = 0.5 * base * height;  % Correct formula
+end
