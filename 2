@@ -1,0 +1,24 @@
+% Creating Variables
+x = 5;
+y = 10;
+disp(['x = ', num2str(x)]);
+disp(['y = ', num2str(y)]);
+
+% Overwriting Variables
+x = 15;
+disp(['New x = ', num2str(x)]);
+
+% Intentional Error: Divide by zero
+try
+    result = x / 0;
+catch ME
+    disp(['Error: ', ME.message]);
+end
+
+% Correcting the Error
+y = 0;
+if y ~= 0
+    result = x / y;
+else
+    disp('Error: Division by zero is not allowed.');
+end
