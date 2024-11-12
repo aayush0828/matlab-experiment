@@ -1,0 +1,22 @@
+% Sample data
+x = 1:10;
+y = sin(x);
+
+% Create a line plot with customization
+figure;
+plot(x, y, 'b-', 'LineWidth', 2);
+
+% Add labels and title
+xlabel('X-axis');
+ylabel('Sine(X)');
+title('Example Plot of Sine Function');
+
+% Add grid lines and legend
+grid on;
+legend('Sine Curve');
+
+% Adjust axis limits (optional)
+% xlim([0 5]);  % Uncomment to zoom the x-axis
+
+% Customize font size and style (optional)
+set(gca, 'FontSize', 14, 'FontName', 'Arial');
