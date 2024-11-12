@@ -1,0 +1,16 @@
+% Default display of floating point number
+pi_value = pi;
+disp(['default pi = ' , num2str(pi_value)]);
+
+% Formatted display
+formatted_pi = sprintf('%.2f', pi);
+disp(['formatted pi = ', formatted_pi]);
+
+% List all variables in the workspace
+whos
+
+% Clear variable x
+clear x
+
+% Verify that x is cleared
+whos
